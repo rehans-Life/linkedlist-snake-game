@@ -1,0 +1,47 @@
+.container {
+  background-color: rgb(7, 18, 21);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  border: 1px solid rgb(62, 131, 154);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+}
+
+.snake_cell {
+  background-color: green;
+}
+
+.food_cell {
+  position: relative;
+}
+
+.food_cell::before {
+  content: "";
+  height: 95%;
+  position: absolute;
+  width: 95%;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.reverse_cell {
+  background-color: purple;
+}
+
+.head {
+  background-color: white;
+}
